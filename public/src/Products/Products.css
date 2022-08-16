@@ -1,0 +1,36 @@
+.products{
+    width: 100%!important;
+    /* height: 100px!important; */
+    background-image: url(../Images/2108.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    /* background-size: auto;
+    background-repeat: repeat-x; */
+}
+.product{
+    background-image: url(../Images/Capture1.PNG);
+    background-size: cover;
+    /* background-position: center; */
+    width: 100%!important;
+    height: 25vh;
+    margin: 5px;
+    border: #67d697 solid 2px;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgb(226, 223, 223);
+/* border-radius: 50% */
+}
+.contactMe{
+    background-image: url(../Images/Group-of-customer-service-representatives.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 30%!important;
+    height: 30vh;
+}
+/* i{
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid grey;
+  position: absolute;
+  top:'25px'
+} */

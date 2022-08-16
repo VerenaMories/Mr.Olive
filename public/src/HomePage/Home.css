@@ -1,0 +1,50 @@
+
+.settings-close{
+    width: 100%!important;
+    /* height: 100px!important; */
+    background-image: url(../Images/slide11.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    /* background-size: auto;
+    background-repeat: repeat-x; */
+}
+.olive{
+    background-image: url(../Images/slide10.png.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%!important;
+    height: 30vh;
+
+}
+.olive1{
+    background-image: url(../Images/Capture.PNG);
+    background-size: cover;
+    /* background-position: center; */
+    width: 25%!important;
+    height: 10vh;
+border-radius: 50%
+}
+.olive2{
+    background-image: url(../Images/Capture1.PNG);
+    background-size: cover;
+    /* background-position: center; */
+    width: 25%!important;
+    height: 10vh;
+border-radius: 50%
+}
+.olive3{
+    background-image: url(../Images/Capture4.PNG);
+    background-size: cover;
+    /* background-position: center; */
+    width: 25%!important;
+    height: 10vh;
+border-radius: 50%
+}
+.contactMe{
+    background-image: url(../Images/Group-of-customer-service-representatives.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 30%!important;
+    height: 30vh;
+}
