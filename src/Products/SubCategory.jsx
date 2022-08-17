@@ -27,7 +27,7 @@ console.log(productName)
   
     await axios({
       method: "post",
-      url:    `http://192.168.1.162:5000/add_quote`,
+      url:    `https://zatun.herokuapp.com/add_quote`,
   data:formdata,
   headers:{ "Content-Type": "multipart/form-data" }})
   window.location.reload();

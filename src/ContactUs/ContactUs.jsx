@@ -23,7 +23,7 @@ export default function ContactUs() {
   
     await axios({
       method: "post",
-      url:    `http://192.168.1.162:5000/add_contact_us`,
+      url:    `https://zatun.herokuapp.com/add_contact_us`,
   data:formdata,
   headers:{ "Content-Type": "multipart/form-data" }})
   window.location.reload();
