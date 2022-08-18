@@ -1,22 +1,26 @@
 import React from "react";
 // import background from "../slide10.png";
 import "./Home.css";
+import contact from '../Images/Group-of-customer-service-representatives.jpg'
+import { Link } from "react-router-dom";
+
 
 export default function Home() {
   return (
     <>
-      <div className="settings-close  w-100 h-30vh">
+      <div className="settings-close ">
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <h4 className="text-white">hahot hena l navbar</h4>
+              <h4 className="text-white"></h4>
             </div>
             <div className="col-md-8" style={{ position: "relative" }}>
-              <div
+             <div>
+             <div
                 style={{
                   backgroundColor: "white",
-                  width: "4%",
-                  height: "140%",
+                  width: "3%",
+                  height: "600%",
                   position: "absolute",
                   top: "250px",
                   right: "880px",
@@ -30,7 +34,7 @@ export default function Home() {
                     width: "22%",
                     height: "25%",
                     position: "absolute",
-                    top: "20px",
+                    top: "18px",
                     right: "13px",
                     borderRadius: "70px",
                   }}
@@ -42,12 +46,14 @@ export default function Home() {
               >
                 MR.OLIVE FOR FOOD INDUSTRY
               </h1>
-              <div
+             </div>
+             <div>
+             <div
                 style={{
                   marginTop: "15px",
                   backgroundColor: "white",
-                  width: "4%",
-                  height: "140%",
+                  width: "3%",
+                  height: "600%",
                   position: "absolute",
                   top: "300px",
                   right: "880px",
@@ -61,7 +67,7 @@ export default function Home() {
                     width: "22%",
                     height: "25%",
                     position: "absolute",
-                    top: "20px",
+                    top: "18px",
                     right: "13px",
                     borderRadius: "70px",
                   }}
@@ -77,23 +83,30 @@ export default function Home() {
               >
                 THE BEST CHOICE FOR YOUR FAMILY'S HEALTH
               </p>
+             </div>
+           
             </div>
           </div>
         </div>
       </div>
-      <div className="container p-5">
+      <div className="container  " style={{paddingTop:'50px'}}>
         <div className="row">
-          <div className="col-md-4">
-            <h2 style={{ color: "brown" }}>MR.OLIVE FOR THE FOOD INDUSTRY</h2>
-            <button className="btn btn-success">READ MORE</button>
+          <div className="col-md-4 col-sm-12 text-center" style={{marginBottom:'10px'}}>
+            <h2 style={{ color: "#d48a1c" }}>MR.OLIVE
+            <br />
+             FOR THE
+             <br />
+              FOOD 
+              <br />
+              INDUSTRY</h2>
+            <button className="btn " style={{ backgroundColor: '#3db671',color:'white', width: '60%', marginTop:'70px'}}>READ MORE <i className="fa-solid fa-angle-right"></i></button>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-sm-12" style={{marginBottom:'10px'}}>
             <div
               style={{
                 backgroundColor: "#3db671",
                 color: "white",
-                height: "350px",
-                width: "400px",
+              
               }}
               className="p-2"
             >
@@ -108,124 +121,131 @@ export default function Home() {
               olive plantations
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-sm-12" >
             <div className="olive"></div>
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container" style={{paddingTop:'50px',paddingBottom:'50px'}}>
         <div className="row p-3" style={{display:'flex' , justifyContent:'space-between'}}>
-          <div
-            className="col-md-3 col-sm-4"
+        
+        <div
+            className="col-md-3 col-sm-12 "
             style={{
               backgroundColor: "#e1e1e3",
-              borderRadius: "50px",
+              borderRadius: "70px",
               padding: "5px",
               boxShadow: "3px 3px gray",
+              marginBottom:'15px'
             }}
-          >
+          ><Link to='/products' style={{textDecoration:'none'}}> 
             <div className="container m-1">
             <div className="row">
               <div
-                className="col-md-4 olive1"
+                className="col-md-4 col-sm-4 bgSecond"
                 style={{ display: "inline-block" }}
-              ></div>
-              <div
-                className="col-md-4 text-bolder"
-                style={{ color: "#3db671", display: "inline-block" }}
               >
-                <div style={{ display: "flex", justifyContent: "center" }}>
+                <div className="olive1"></div>
+              </div>
+              <div
+                className="col-md-8 col-sm-8 text-bolder bgThird"
+                style={{ color: "#3db671", display: "flex" }}
+              >
+                <div className="bgFirst" style={{ display: "flex", justifyContent: "center" , alignItems:'center' }}>
                   PRODUCTS
                 </div>
               </div>
             </div>
             </div>
-           
-          </div>
+            </Link> 
+          </div> 
           <div
-            className="col-md-3 col-sm-4"
+            className="col-md-3 col-sm-12 "
             style={{
               backgroundColor: "#e1e1e3",
-              borderRadius: "50px",
+              borderRadius: "70px",
               padding: "5px",
               boxShadow: "3px 3px gray",
+              marginBottom:'15px'
             }}
-          >
+          ><Link to='/products' style={{textDecoration:'none'}}> 
             <div className="container m-1">
-              <div className="row">
+            <div className="row">
               <div
-              className="col-md-4 olive2"
-              style={{ display: "inline-block" }}
-            ></div>
-            <div
-              className="col-md-4 text-bolder"
-              style={{ color: "#3db671", display: "inline-block" }}
-            >
-              <div style={{ display: "flex", justifyContent: "center" }}>
+                className="col-md-4 col-sm-4 bgSecond"
+                style={{ display: "inline-block" }}
+              >
+                <div className="olive2"></div>
+              </div>
+              <div
+                className="col-md-8 col-sm-8 text-bolder bgThird"
+                style={{ color: "#3db671", display: "flex" }}
+              >
+                <div className="bgFirst" style={{ display: "flex", justifyContent: "center" , alignItems:'center' }}>
                 PACKAGES
+                </div>
               </div>
             </div>
-              </div>
             </div>
-        
-          </div>
+            </Link> 
+          </div> 
           <div
-            className="col-md-3 col-sm-4"
+            className="col-md-3 col-sm-12 "
             style={{
               backgroundColor: "#e1e1e3",
-              borderRadius: "50px",
+              borderRadius: "70px",
               padding: "5px",
               boxShadow: "3px 3px gray",
+              marginBottom:'15px'
             }}
-          >
+          ><Link to='/products' style={{textDecoration:'none'}}> 
             <div className="container m-1">
-              <div className="row">
+            <div className="row">
               <div
-              className="col-md-4 olive3"
-              style={{ display: "inline-block" }}
-            ></div>
-            <div
-              className="col-md-4 text-bolder"
-              style={{ color: "#3db671", display: "inline-block" }}
-            >
-              <div style={{ display: "flex", justifyContent: "center" }}>
+                className="col-md-4 col-sm-4 bgSecond"
+                style={{ display: "inline-block" }}
+              >
+                <div className="olive3"></div>
+              </div>
+              <div
+                className="col-md-8 col-sm-8 text-bolder bgThird"
+                style={{ color: "#3db671", display: "flex" }}
+              >
+                <div className="bgFirst" style={{ display: "flex", justifyContent: "center" , alignItems:'center' }}>
                 PHOTOGALLERY
+                </div>
               </div>
             </div>
-              </div>
             </div>
-          
-          </div>
+            </Link> 
+          </div> 
+      
         </div>
       </div>
 
-      <div
-        className="row"
-        style={{
-          backgroundColor: "#3db671",
-          color: "white",
-          margin: "0",
-          display: "flex",
-          justifyContent: "end",
-        }}
-      >
-        <div className="col-md-7">
-          <div
-            className="row "
-            style={{ display: "flex", justifyContent: "center" }}
-          >
-            CONTACT US
+      <div className="row"  style={{backgroundColor:'#3db671', color:'white' , margin:'0', display:'flex', justifyContent:'end'}}>
+          <div className="col-md-7 col-sm-8" style={{marginTop:'25px'}}>
+            <div className="container">
+            <div className="row " >
+              <div className="col-md-12" style={{display:'flex', justifyContent:'center'}}>
+                <div className="contactContect" >
+                <h6 > CONTACT US</h6>
+           
+
+           <p >when you have a question we're here to help</p>  
+                </div>
+          
+              </div>
+         
+</div>
+            </div>
+           
           </div>
-          <div
-            className="row "
-            style={{ display: "flex", justifyContent: "center" }}
-          >
-            when you have a question we're here to help
+          <div className="col-md-1 col-sm-4" style={{ backgroundColor:'#5cd38f'}}></div>
+          <div className="col-md-4 col-sm-12 " style={{padding:'0'}}>
+<img src={contact} alt="" className='contactMeFooter'/>
           </div>
         </div>
-        <div className="col-md-1" style={{ backgroundColor: "#5cd38f" }}></div>
-        <div className="col-md-4 contactMe"></div>
-      </div>
     </>
   );
 }

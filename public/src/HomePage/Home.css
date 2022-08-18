@@ -21,7 +21,7 @@
     background-image: url(../Images/Capture.PNG);
     background-size: cover;
     /* background-position: center; */
-    width: 25%!important;
+    width: 100%!important;
     height: 10vh;
 border-radius: 50%
 }
@@ -29,7 +29,7 @@ border-radius: 50%
     background-image: url(../Images/Capture1.PNG);
     background-size: cover;
     /* background-position: center; */
-    width: 25%!important;
+    width: 100%!important;
     height: 10vh;
 border-radius: 50%
 }
@@ -37,7 +37,7 @@ border-radius: 50%
     background-image: url(../Images/Capture4.PNG);
     background-size: cover;
     /* background-position: center; */
-    width: 25%!important;
+    width: 100%!important;
     height: 10vh;
 border-radius: 50%
 }
@@ -48,3 +48,28 @@ border-radius: 50%
     width: 30%!important;
     height: 30vh;
 }
+
+@media only screen and (max-width: 600px) {
+    .bgFirst {
+       display: flex !important;
+       justify-content: center!important;
+       align-items: center !important;
+    }
+    .bgSecond{
+        width:25%!important;
+        
+    }
+    .olive1{
+        width: 100%!important;
+    }
+    .olive3{
+        width: 100%!important;
+    }
+    .olive2{
+        width: 100%!important;
+    }
+    .bgThird{
+        width: 75%!important;
+        display: flex!important;
+    }
+  }

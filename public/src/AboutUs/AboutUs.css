@@ -9,17 +9,17 @@
     background-repeat: repeat-x; */
 }
 .oliveOil{
-    width: 30%!important;
+    width: 100%!important;
     /* height: 100px!important; */
     background-image: url(../Images/Capture\ oil.PNG);
     background-size: cover;
     background-position: center;
     height: 60vh;
 }
-.contactMe{
-    background-image: url(../Images/Group-of-customer-service-representatives.jpg);
+.contactMeFooter{
+    /* background-image: url(../Images/Group-of-customer-service-representatives.jpg); */
     background-size: cover;
     background-position: center;
-    width: 30%!important;
-    height: 30vh;
+    width: 100%!important;
+    height: 23vh;
 }

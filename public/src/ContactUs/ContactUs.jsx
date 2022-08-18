@@ -1,52 +1,57 @@
 import React from "react";
 import "./ContactUs.css";
+import axios from 'axios';
+
 
 export default function ContactUs() {
+
+  async function postContact(){
+    var name=document.getElementById('name').value;
+    var email=document.getElementById('email').value;
+    var subject=document.getElementById('subject').value;
+    var message=document.getElementById('message').value;
+
+
+  
+    var formdata = new FormData();
+    formdata.append('name', name);
+    formdata.append('email', email);
+    formdata.append('subject', subject);
+    formdata.append('message', message);
+
+    // formdata.append('image',   image.file)
+  
+    await axios({
+      method: "post",
+      url:    `https://zatun.herokuapp.com/add_contact_us`,
+  data:formdata,
+  headers:{ "Content-Type": "multipart/form-data" }})
+  window.location.reload();
+  }
+
   return (
     <>
       <div className="contact ">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4">
-              <h4 className="text-white">hahot hena l navbar</h4>
-            </div>
-            <div className="col-md-8 ">
+        <div className="container"  style={{height:'100%'}}>
+          <div className="row"  style={{height:'100%'}}>
+          <div className="col-md-12 " style={{display:'flex', justifyContent:'center' , alignItems:'center',height:'100%'}}>
               
-            <div style={{backgroundColor:'#0008', width:'150px', height:'50px', position:'relative', borderRadius:'10px'}}>
-<div className="container">
-  <div className="row">
-    <div className="col-md-3">
-      <div  >
-   <i class="fa-solid fa-earth-americas" style={{position:'absolute' , top:'25px'}}></i>
-      </div>
-    </div>
-    <div className="col-md-3" >
-      <div >
-   <i class="fa-solid fa-earth-americas" style={{position:'absolute' , top:'25px'}}></i>
-      </div>
-    </div> <div className="col-md-3">
-      <div >
-   <i class="fa-solid fa-earth-americas" style={{position:'absolute' , top:'25px'}}></i>
-      </div>
-    </div> <div className="col-md-3">
-      <div >
-   <i class="fa-solid fa-earth-americas" style={{position:'absolute' , top:'25px'}}></i>
-      </div>
-    </div>
-  </div>
-</div>
-                </div>
-              <div style={{position:'relative'}}>
+            
+                <div 
+                style={{display:'flex', justifyContent:'center', alignContent:'center', textAlign:'center'}}
                
-              <h1 style={{position:'absolute' , top:'130px', left:'230px'}}
-                className="text-white"
-              
-              >
+                >
+                 
+                <h1 
+               
+                  className="text-white"
+                
+                >
                 CONTACT US
-              </h1>
+                </h1>
+                </div>
+            
               </div>
-          
-            </div>
           </div>
         </div>
       </div>
@@ -65,47 +70,50 @@ export default function ContactUs() {
         <div className="row">
           <div className="col-md-6 p-3">
             <div className="mb-3">
-              <label for="exampleFormControlInput1" className="form-label">
+              <label for="name" className="form-label" >
                 Your Name ( Required )
               </label>
               <input
                 type="text"
                 className="form-control"
-                id="exampleFormControlInput1"
+                id="name"
               />
             </div>
             <div className="mb-3">
-              <label for="exampleFormControlInput2" className="form-label">
-                Your Name ( Required )
+              <label for="email" className="form-label" >
+                Your email ( Required )
               </label>
               <input
                 type="email"
                 className="form-control"
-                id="exampleFormControlInput2"
+                // id="exampleFormControlInput2"
+                id='email'
               />
             </div>{" "}
             <div className="mb-3">
-              <label for="exampleFormControlInput3" className="form-label">
+              <label for="subject" className="form-label" >
                 Subject
               </label>
               <input
                 type="text"
                 className="form-control"
-                id="exampleFormControlInput3"
+                // id="exampleFormControlInput3"
+                id="subject"
               />
             </div>
             <div className="mb-3">
-              <label for="exampleFormControlTextarea1" className="form-label">
+              <label for="message" className="form-label" >
                 Your Message
               </label>
               <textarea
                 className="form-control"
-                id="exampleFormControlTextarea1"
+                // id="exampleFormControlTextarea1"
                 rows="10"
+                id="message"
               ></textarea>
             </div>
         <div className="buttonContainer1">
-        <button type="button" className="btn send">
+        <button type="button" className="btn send" onClick={postContact}>
               SEND NOW
             </button>
         </div>

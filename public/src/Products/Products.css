@@ -34,3 +34,158 @@
   position: absolute;
   top:'25px'
 } */
+.blackOlive{
+    background-image: url(../Images/Capture.PNG);
+    background-size: cover;
+    /* background-position: center; */
+    width: 100%!important;
+    height: 25vh;
+    margin: 5px;
+    border: #67d697 solid 2px;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgb(226, 223, 223);
+}
+.oliveOil{
+    background-image: url(../Images/2108.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    width: 100%!important;
+    height: 25vh;
+    margin: 5px;
+    border: #67d697 solid 2px;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgb(226, 223, 223);
+}
+.greenOlive{
+    background-image: url(../Images/Capture4.PNG);
+    background-size: cover;
+    /* background-position: center; */
+    width: 100%!important;
+    height: 25vh;
+    margin: 5px;
+    border: #67d697 solid 2px;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgb(226, 223, 223);
+}
+.greenOlive2{
+    background-image: url(../Images/slide12.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    width: 100%!important;
+    height: 25vh;
+    margin: 5px;
+    border: #67d697 solid 2px;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgb(226, 223, 223);
+}
+.greenOlive3{
+    background-image: url(../Images/slide14.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    width: 100%!important;
+    height: 25vh;
+    margin: 5px;
+    border: #67d697 solid 2px;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgb(226, 223, 223);
+}
+
+/*----------------------------------------------------------------*/
+.photoContainer2{
+    /* background-color: tomato; */
+    cursor: pointer;
+}
+#close{
+    position: absolute;
+    right: 10px;
+top: 10px;
+}
+.buttonContainer2{
+    width:40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+}
+
+.lightContainer2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 1500px;
+    background-color: #0006;
+}
+.lightBox2{
+    /* background-image:url(../Images/slide14.jpg) ; */
+    background-position: center center;
+    background-size: cover;
+/* background-color: #67d697; */
+width: 100%;
+height: 100%;
+position: relative;
+}
+.lightBox2 i{
+    font-size: 1.2rem;
+    /* margin: 10px; */
+    cursor: pointer;
+}
+.get{
+
+    background-color: #3db671!important;
+    color:white!important;
+    width: 50%!important;
+   border-radius: 20px!important;
+}
+.very{
+    background-size: cover;
+    background-position: center;
+    width: 60%!important;
+    height: 25vh;
+    margin: 5px;
+   
+    border: #67d697 solid 2px;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgb(0,0,0,0.2);
+}
+
+@media only screen and (max-width: 600px) {
+    .lightContainer2 {
+        right: 0;
+       
+
+        
+    }
+    .ayhaga{
+        background-color: #000;
+        border-radius: 20px;
+        padding-top: 20px;
+    }
+  }
+ 
+  @media only screen and (min-width: 768px) {
+    .lightContainer2 {
+        right: 0px;
+    }
+  }
+   @media only screen and (min-width: 992px) {
+    .lightContainer2 {
+        right: 0px;
+    }
+  } 
+  @media only screen and (min-width: 1200px) {
+    .lightContainer2 {
+        right: 800px;
+    }
+  } 
+  @media only screen and (min-width: 1400px) {
+    .lightContainer2 {
+        right: 1000px;
+    }
+  } 
+  @media only screen and (min-width: 1600px) {
+    .lightContainer2 {
+        right: 1500px;
+    }
+  } 
+
